@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Sitio de demostración para una barbería.">
+<title>Barbería Élite | Demo</title>
+<style>
+:root{color-scheme:dark;--gold:#e7b76b;--bg:#101114;--panel:#1b1d21}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:#f7f3ed;font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}a{color:inherit;text-decoration:none}.container{max-width:1050px;margin:auto;padding:0 22px}header{background:#151619;position:sticky;top:0;z-index:2;border-bottom:1px solid #333}nav{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:72px}nav strong{font-size:1.2rem;color:var(--gold)}nav .links{display:flex;gap:18px;flex-wrap:wrap;font-size:.9rem}.hero{padding:110px 0;background:radial-gradient(circle at 85% 20%,#50391d 0%,transparent 45%),linear-gradient(130deg,#25211b,#101114 65%)}.eyebrow{color:var(--gold);font-weight:700;letter-spacing:.15em;text-transform:uppercase}h1{font-size:clamp(2.7rem,7vw,5rem);line-height:1.05;margin:15px 0}h2{font-size:2rem;margin:0 0 20px}p{color:#d0cbc4;max-width:650px}.btn{display:inline-block;background:var(--gold);color:#18140e;padding:13px 22px;border-radius:8px;font-weight:800;margin-top:18px}.btn:hover{background:#f6cf91}section{padding:65px 0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:var(--panel);border:1px solid #37383a;border-radius:14px;padding:24px}.card h3{margin:0 0 8px}.price{font-size:1.5rem;color:var(--gold);font-weight:800}.muted{color:#aaa}footer{border-top:1px solid #333;padding:25px 0;color:#aaa}.notice{font-size:.85rem;color:#a8a29a}@media(max-width:650px){nav{align-items:flex-start;flex-direction:column;padding:15px 0}.grid{grid-template-columns:1fr}.hero{padding:80px 0}}
+</style>
+</head>
+<body>
+<header><nav class="container"><strong>✂ BARBERÍA ÉLITE</strong><div class="links"><a href="#servicios">Servicios</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a></div></nav></header>
+<main>
+<div class="hero"><div class="container"><div class="eyebrow">Estilo que se nota</div><h1>Tu mejor versión<br>empieza acá.</h1><p>Cortes clásicos, fades modernos y cuidado de barba. Una experiencia de barbería hecha a tu medida.</p><a class="btn" href="#contacto">Consultar turno</a></div></div>
+<section id="servicios"><div class="container"><h2>Nuestros servicios</h2><div class="grid"><article class="card"><h3>Corte clásico</h3><p>Un corte prolijo, a tu estilo.</p><div class="price">$8.000</div></article><article class="card"><h3>Degradado / Fade</h3><p>Detalles y terminaciones precisas.</p><div class="price">$10.000</div></article><article class="card"><h3>Corte + barba</h3><p>Servicio completo para renovar tu look.</p><div class="price">$13.000</div></article></div><p class="notice">Precios de ejemplo: reemplazarlos por los del negocio real.</p></div></section>
+<section id="nosotros" style="background:#17181b"><div class="container"><h2>Sobre nosotros</h2><p>En Barbería Élite combinamos atención personalizada y estilo. Queremos que cada visita sea cómoda y que salgas conforme con tu corte.</p></div></section>
+<section id="contacto"><div class="container"><h2>Reservá tu turno</h2><p><strong>Horario de ejemplo:</strong> lunes a sábado, de 10:00 a 20:00.</p><p><strong>Ubicación:</strong> tu ciudad, Argentina.</p><a id="wa" class="btn" href="https://wa.me/5491112345678?text=Hola%2C%20quiero%20consultar%20por%20un%20turno" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a><p class="notice">DEMO: el número de WhatsApp es ficticio. Reemplazalo antes de publicar para un cliente.</p></div></section>
+</main><footer><div class="container">© <span id="year"></span> Barbería Élite · Sitio de demostración</div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body></html>
